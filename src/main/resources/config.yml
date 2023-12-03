@@ -1,0 +1,12 @@
+# CivElevator 1.0
+# Originally developed by ttk2, ProgrammerDan, and other developers who contributed to this feature.
+# Modified by KingColton1 (IGN: CapColt and CapianColton)
+# The only use of this plugin is to turn two same material of blocks into an elevator. I recommend using a material that
+# is not frequently used for building such as DIAMOND_BLOCK, GOLD_BLOCK, LODESTONE
+
+# You have to look up for data value ID of material and sound like GOLD_BLOCK in order to make this work.
+# Example of a material ID: https://minecraft.wiki/w/Block_of_Gold#Data_values
+# Example of a sound ID: https://minecraft.wiki/w/Enderman#Sounds
+# Full upper cases are not required as this will turn from lower case to full upper cases for you.
+ELEVATOR MATERIAL: "GOLD_BLOCK"
+ELEVATOR SOUND: "ENTITY_ENDERMAN_TELEPORT"

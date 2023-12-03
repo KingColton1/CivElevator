@@ -1,0 +1,67 @@
+plugins {
+    id 'java'
+}
+
+group = 'kingcolton1'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        name = "aikar"
+        url = "https://repo.aikar.co/content/groups/aikar/"
+    }
+    maven {
+        name = "minecraft-lib"
+        url = "https://libraries.minecraft.net"
+    }
+    maven {
+        name = "jitpack"
+        url = "https://jitpack.io"
+    }
+    maven {
+        name = "papermc-repo"
+        url = "https://repo.papermc.io/repository/maven-public/"
+    }
+    maven {
+        name = "sonatype"
+        url = "https://oss.sonatype.org/content/groups/public/"
+    }
+}
+
+dependencies {
+    compileOnly "io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT"
+    implementation "net.kyori:adventure-api:4.14.0"
+    implementation 'org.apache.commons:commons-lang3:3.13.0'
+    implementation "com.mojang:datafixerupper:1.0.20"
+    implementation "com.zaxxer:HikariCP:5.0.1"
+    implementation "org.apache.commons:commons-collections4:4.4"
+    implementation "com.google.code.findbugs:jsr305:3.0.2"
+    implementation "co.aikar:acf-bukkit:0.5.0-SNAPSHOT"
+    implementation "co.aikar:taskchain-bukkit:3.7.2"
+}
+
+def targetJavaVersion = 17
+java {
+    def javaVersion = JavaVersion.toVersion(targetJavaVersion)
+    sourceCompatibility = javaVersion
+    targetCompatibility = javaVersion
+    if (JavaVersion.current() < javaVersion) {
+        toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
+        options.release = targetJavaVersion
+    }
+}
+
+processResources {
+    def props = [version: version]
+    inputs.properties props
+    filteringCharset 'UTF-8'
+    filesMatching('plugin.yml') {
+        expand props
+    }
+}
