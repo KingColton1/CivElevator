@@ -25,7 +25,9 @@ public class Listener implements org.bukkit.event.Listener {
         String materialName = config.get().getString("ELEVATOR MATERIAL");
 
         if (materialName != null) {
-            return Material.valueOf(materialName.toUpperCase());
+            if (Material.matchMaterial(materialName) != null) {
+                return Material.matchMaterial(materialName);
+            }
         }
         return Material.GOLD_BLOCK;
     }
