@@ -1,8 +1,11 @@
 # CivElevator
-Independent plugin for civ's private/personal servers for 1.18.2. Designed to be absolutely light weight and minimal.
+Independent plugin for Civ's private/personal servers for 1.18.2. Designed to be absolutely lightweight and minimal feature but useful at the same time.
 
-All credits goes to the civ developers who contributed to SimpleAdminHacks repo, where GoldElevator resided in!
-I (KingColton1; IGN CapColt and CapianColton) modified some portions of codes to be decoupled from the mainline plugins and added config.yml file to customize elevator block and sound for your preferance.
+All credits goes to the civ developers who contributed to [SimpleAdminHacks](https://github.com/CivMC/SimpleAdminHacks) repo, where GoldElevator resided in!
+
+I (KingColton1; IGN CapColt and CapianColton) modified some portions of codes to be decoupled from the mainline plugins and added config.yml file to customize elevator block and sound for your preference.
+
+I plan to rewrite CivElevator (will be named as BlockElevator in a separate repository) for ReIndev and Better than Adventure, the mods that is complete rewrite of Minecraft Beta 1.7.3. I recommend both to try them out yourself!
 
 # HOW TO USE CONFIG.YML
 There are two settings you can use to customize; ELEVATOR MATERIAL and ELEVATOR SOUND. Each of them require Data Value ID (eg GOLD_BLOCK), you must look up on https://minecraft.wiki to find Data Value ID of a block and sound. <br>
