@@ -1,5 +1,5 @@
 # CivElevator
-Independent plugin for Civ's private/personal servers for 1.18.2. Designed to be absolutely lightweight and minimal feature but useful at the same time.
+Independent plugin for Civ's private/personal servers for 1.20.4. Designed to be absolutely lightweight and minimal feature but useful at the same time.
 
 All credits goes to the civ developers who contributed to [SimpleAdminHacks](https://github.com/CivMC/SimpleAdminHacks) repo, where GoldElevator resided in!
 

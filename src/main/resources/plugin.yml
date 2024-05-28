@@ -1,4 +1,4 @@
 name: CivElevator
 version: '${version}'
 main: kingcolton1.civelevator.CivElevator
-api-version: '1.18'
+api-version: '1.20'
