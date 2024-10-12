@@ -5,7 +5,7 @@ All credits goes to the civ developers who contributed to [SimpleAdminHacks](htt
 
 I (KingColton1; IGN CapColt and CapianColton) modified some portions of codes to be decoupled from the mainline plugins and added config.yml file to customize elevator block and sound for your preference.
 
-I plan to rewrite CivElevator (will be named as BlockElevator in a separate repository) for ReIndev and Better than Adventure, the mods that is complete rewrite of Minecraft Beta 1.7.3. I recommend both to try them out yourself!
+I made elevator mod for ReIndev! Check this out: https://github.com/KingColton1/BlockElevator-Reindev
 
 # HOW TO USE CONFIG.YML
 There are two settings you can use to customize; ELEVATOR MATERIAL and ELEVATOR SOUND. Each of them require Data Value ID (eg GOLD_BLOCK), you must look up on https://minecraft.wiki to find Data Value ID of a block and sound. <br>
