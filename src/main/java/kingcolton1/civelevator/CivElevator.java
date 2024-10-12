@@ -16,7 +16,7 @@ public final class CivElevator extends JavaPlugin {
         config.get().options().copyDefaults(true);
         config.save();
 
-        getServer().getPluginManager().registerEvents(new Listener(), this);
+        getServer().getPluginManager().registerEvents(new Listener(this), this);
     }
 
     @Override

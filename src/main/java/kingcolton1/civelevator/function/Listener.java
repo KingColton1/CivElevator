@@ -1,6 +1,8 @@
 package kingcolton1.civelevator.function;
 
 import com.destroystokyo.paper.event.player.PlayerJumpEvent;
+
+import kingcolton1.civelevator.CivElevator;
 import kingcolton1.civelevator.config.config;
 import kingcolton1.civelevator.framework.AutoLoad;
 import kingcolton1.civelevator.framework.DataParser;
@@ -25,6 +27,10 @@ public class Listener implements org.bukkit.event.Listener {
     private final Sound elevatorSound = getSoundName();
 
     private DoubleInteractFixer interactFixer;
+
+    public Listener(CivElevator plugin) {
+        this.interactFixer = new DoubleInteractFixer(plugin);
+    }
 
     private Material getMaterialName() {
         String materialName = config.get().getString("ELEVATOR MATERIAL");
